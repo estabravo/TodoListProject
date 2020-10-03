@@ -1,4 +1,7 @@
 // check off specific todos by clicking
-$('li').click(() => {
-    alert("clicked li");
+$('li').click(e => {
+    $(e.target).css({
+        color: 'gray',
+        textDecoration: 'line-through'
+    });
 });
